@@ -1,0 +1,41 @@
+{
+  "name": "workshop",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "dev": "storybook dev -p 6006",
+    "build": "build-storybook"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "theme-ui": "^0.16.0"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "^7.1.0",
+    "@storybook/addon-interactions": "^7.1.0",
+    "@storybook/addon-links": "^7.1.0",
+    "@storybook/addon-onboarding": "^1.0.7",
+    "@storybook/blocks": "^7.1.0",
+    "@storybook/react": "^7.1.0",
+    "@storybook/react-vite": "^7.1.0",
+    "@storybook/testing-library": "^0.2.0",
+    "@types/react": "^18.2.14",
+    "@types/react-dom": "^18.2.6",
+    "@typescript-eslint/eslint-plugin": "^5.61.0",
+    "@typescript-eslint/parser": "^5.61.0",
+    "@vitejs/plugin-react": "^4.0.1",
+    "eslint": "^8.44.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.1",
+    "storybook": "^7.1.0",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.0"
+  }
+}
