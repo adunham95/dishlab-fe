@@ -5,11 +5,14 @@ export interface IButtonProps {
   color?: string;
   label: string;
   primary: boolean;
+  variant: "primary" | "secondary"
 }
 
 const Button = (props: IButtonProps) => {
-  const {color = 'green'} = props
-  return <div>{color}</div>
+  const {color = 'green', variant} = props
+  return <div sx={{
+    variant: `buttons.${variant}`,
+  }}>{color}</div>
 }
 
 export default Button
